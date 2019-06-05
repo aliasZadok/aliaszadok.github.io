@@ -255,6 +255,8 @@ $cvvInput.on('input', createListener(isValidCVV));
 
 //form submition
 $('form').submit((e)=> {
+  
+  window.location.reload(true);
 
   const empty_name_input = $.trim($name.val()) === "";
   const empty_email_input = $.trim($emailInput.val()) === "";
