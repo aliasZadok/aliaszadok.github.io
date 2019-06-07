@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flash Cards</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="img/logo.png">
+        <p>An app to help you study</p>
+    </header>
+    <section class="namecard">
+        <div class="namecard-hello">
+            <p class="namecard-greeting">Welcome, John!</p>
+            <form action="/goodbye" method="POST" class="namecard-exit">
+                <button type="submit"><img src="img/close.svg"></button>
+            </form>
+        </div>
+    </section>
+    <section class="flashcards">
+        <div class="card card-question">
+            <div class="card-header">
+            </div>
+            <h1 class="card-title">Question</h1>
+            <div id="content">
+                <h2>Which HTML element can contain JavaScript?</h2>
+                <p id="hint">
+                    <i>Hint: It starts with an &quot;s&quot;</i>
+                </p>
+            </div>
+            <div class="card-flip-wrap">
+                <a href="card-back.html"><img src="img/flip.svg" class="card-flip"></a>
+            </div>
+            <div class="card-next">
+                <a href="error.html"><img src="img/next.svg"></a>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </section>
+</body>
+
+</html>

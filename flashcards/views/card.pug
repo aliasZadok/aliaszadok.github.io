@@ -1,0 +1,19 @@
+extends app
+
+block card
+  section(class='flashcards')
+    .card(class=`card-${sideTitle}`)
+      .card-header
+      h1.card-title #{sideTitle}
+      #content
+        h2= text
+          if hint
+            p.hint
+              i= hint
+      .card-flip-wrap
+        a(href=`${sideToShow}`)
+          img.card-flip(src='/static/img/flip.svg')
+      .card-next
+        a(href='/cards')
+          img(src='/static/img/next.svg')
+  script(src='/app.js')
